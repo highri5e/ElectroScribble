@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ElectroScribble</title>
+        <link href="../node_modules/photonkit/dist//css/photon.css" rel="stylesheet">
+
+        <link href="app.css" rel="stylesheet">
+        <link href="./pads/pads.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="window">
+
+            <!-- .toolbar-header sits at the top of your app -->
+            <header class="toolbar toolbar-header">
+                <h1 class="title">ElectoScribble</h1>
+
+                <div class="toolbar-actions">
+
+                    <div class="btn-group">
+                        <button class="btn btn-default">
+                            <span class="icon icon-home"></span>
+                        </button>
+                        <button class="btn btn-default">
+                            <span class="icon icon-folder"></span>
+                        </button>
+                        <button class="btn btn-default active">
+                            <span class="icon icon-cloud"></span>
+                        </button>
+                    </div>
+                
+                    <button class="btn btn-default">
+                        <span class="icon icon-home icon-text"></span>
+                        Filters
+                    </button>
+                
+                    <button class="btn btn-default btn-dropdown pull-right">
+                        <span class="icon icon-megaphone"></span>
+                    </button>
+                
+                </div>
+            </header>
+
+
+    
+          <!-- Your app's content goes inside .window-content -->
+          <div class="window-content">
+
+            <div class="pane-group">
+                <div class="pane pane-sm sidebar">
+                    <h5 class="nav-group-title">Instruments</h5>
+                    <nav class="nav-group" id="instruments-list">
+                        
+
+                    </nav>
+                </div>
+    
+                <div class="pane">
+
+                    <div class="notes-container">
+                        <h2>Notes</h2>
+                        <div class="note" data-note="C4">C4</div>
+                        <div class="note" data-note="D4">D4</div>
+                        <div class="note" data-note="E4">E4</div>
+                        <div class="note" data-note="F4">F4</div>
+                        <div class="note" data-note="G4">G4</div>
+                        <div class="note" data-note="A4">A4</div>
+                        <div class="note" data-note="B4">B4</div>
+                        <div class="note" data-note="C5">C5</div>
+                    </div>
+
+                </div>
+
+            </div>
+          </div>
+       
+        </div>
+        <script src="./pads/pads.js"></script>
+    </body>
+</html>

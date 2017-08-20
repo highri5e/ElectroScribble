@@ -1,0 +1,30 @@
+{
+  "name": "electroscribble",
+  "version": "0.1.0",
+  "description": "Music App on Electron using ScribbleTune",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ./app/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highri5e/ElectroScribble.git"
+  },
+  "author": "highri5e",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/highri5e/ElectroScribble/issues"
+  },
+  "homepage": "https://github.com/highri5e/ElectroScribble#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "load-json-file": "^3.0.0",
+    "photonkit": "^0.1.2",
+    "scribbletune": "^0.10.1",
+    "soundfont-player": "^0.10.6"
+  },
+  "devDependencies": {
+    "electron": "^1.7.5"
+  }
+}
