@@ -1,6 +1,6 @@
 # ElectroScribble
 
-** ElectroScribble** is a project where I experiment with:
+**ElectroScribble** is a project where I experiment with:
 
 * [Electron](https://electron.atom.io)
 * [ScribbleTune](http://scribbletune.com/)
