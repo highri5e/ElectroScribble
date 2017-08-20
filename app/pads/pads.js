@@ -12,10 +12,6 @@ Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano').then(function (
 })
 
 
-
-
-
-
 $(function(){
 
     function loadInstruments(instruments){
@@ -37,8 +33,7 @@ $(function(){
 
     $('.notes-container').on('click', 'div.note', function(){
         var note = $(this).data('note');
-        player.play('../../midi/notes_B4.mid');
-        //scribble.createMidi(note)
+        player.play(note);
 
     }) 
 
