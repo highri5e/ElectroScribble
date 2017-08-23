@@ -1,0 +1,32 @@
+.sequencer-container {
+    padding: 15px 15px 5px;
+    background: #222d32;
+}
+.sequencer-container nav p,
+.sequencer-container nav small {
+    color: #fff;
+}
+
+#sequencer li {
+    display: inline-block;
+    height: 36px;
+    width: 20px;
+    background-color: #662929;
+    border: 1px solid #4C1D1D;
+    margin: 0 2px 0 0;
+    border-top: 3px solid #702C2C;
+}
+
+#sequencer li.on {
+    background-color: #C64646;
+    border-color: #662929;
+    border-top: 3px solid #8D3636;
+}
+
+#sequencer li.on:hover {
+    background-color: #B33F3F;
+}
+
+#sequencer li:hover {
+    background-color: #3D0707;
+}

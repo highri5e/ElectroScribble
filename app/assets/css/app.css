@@ -1,0 +1,85 @@
+@import url("normalize.css");
+@import url("sidebar.css");
+
+/***** OVERRIDE KICKSTART *****/
+
+[class*=col-], [class^=col-] {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (min-width: 480px) {
+    .col-10 {
+        width: calc(84%);
+    }
+}
+
+.row {
+    width: calc(100%);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+
+/***** GENERAL *****/
+
+html, body {
+    height:100%;
+    overflow-x: hidden;
+    background-color: #ecf0f5;
+ }
+
+p {
+    margin: 0 0 10px;
+    line-height: 1.45rem;
+}
+
+
+
+
+
+/***** NAVBAR *****/
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #EDEDED;
+    border-bottom: 1px solid #A9A9A9;
+}
+
+.navbar > nav ul> li {
+    background: #E9E9E9;
+    border-left: 2px solid #CBCBCB
+}
+
+
+.navbar nav>ul>li.disabled>a:not([role=button]){
+    background: #F5F5F5;
+    cursor: not-allowed;
+    border: 1px solid transparent;
+}
+
+.navbar nav>ul>li.disabled>a:not([role=button]):hover {
+    background: #F5F5F5;
+    cursor: not-allowed;
+    border: none;
+    border: 1px solid transparent;
+    color: rgba(0,0,0,.5);
+}
+
+
+/***** MAIN CONTENT *****/
+
+.main-content {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+

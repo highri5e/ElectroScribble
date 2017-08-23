@@ -18,9 +18,7 @@
   },
   "homepage": "https://github.com/highri5e/ElectroScribble#readme",
   "dependencies": {
-    "jquery": "^3.2.1",
     "load-json-file": "^3.0.0",
-    "photonkit": "^0.1.2",
     "scribbletune": "^0.10.1",
     "soundfont-player": "^0.10.6"
   },
