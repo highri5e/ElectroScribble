@@ -1,13 +1,31 @@
-# ElectroScribble
+# ElectroScribble 
+*Scribbletune + Electron*
 
-** ElectroScribble** is a project where I experiment with:
+
+**ElectroScribble** is a project where I experiment with:
 
 * [Electron](https://electron.atom.io)
-* [ScribbleTune](http://scribbletune.com/)
+* [Scribbletune](http://scribbletune.com/)
 * [Soundfont-Player](https://github.com/danigb/soundfont-player)
+* [midijs](http://www.midijs.net/)
 
-UI:
-* [Photon](http://photonkit.com)
+**UI**:
+* [Kickstart](http://getkickstart.com)
 
-The idea is to make UI for the ScribbleTune, maybe more...
+**Very very basic UI** has been done. It allows for: 
+* playing the notes on the keyboard
+* changing the instruments, 
+* capturing the notes
+* setting the pattern
+* generating the `.mid` file
+* playing generated `.mid` file
+
+
+**TODO**:
+* Add more Scribbletune functions (selecting chords, extending pattern length, sizzle etc.)
+* UI improvements
+* code cleanup
+
+
+
 

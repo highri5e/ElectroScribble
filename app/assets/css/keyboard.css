@@ -1,0 +1,119 @@
+/*
+* keyboard Keyboard 
+* Author: Luiz Felipe Tartarotti Fialho
+* @LFeh / luizfelipe.tf.13@gmail.com
+* http://www.felipefialho.com/
+*/
+  .keyboard-container {
+    position: relative;
+    width: 100%;
+    background: -webkit-linear-gradient(-65deg, #000000, #222222, #000000, #222222 75%);
+    background: -moz-linear-gradient(-65deg, #000000, #222222, #000000, #222222 75%);
+    background: -o-linear-gradient(-65deg, #000000, #222222, #000000, #222222 75%);
+    background: linear-gradient(-65deg, #000000, #222222, #000000, #222222 75%);
+  }
+
+  .keyboard-container nav {
+    padding: 15px 15px 5px;
+    background: #222d32;
+    color: #fff;
+  }
+
+  .keyboard-container #keyboard {
+    border-top: 2px solid #111;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.5), inset 0 -4px 5px #000000;
+
+    height: 320px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+  .keyboard-container #keyboard .key {
+    display: inline-block;
+    position: relative;
+    margin: 0 1px;
+    width: 35px;
+    max-width: 50px;
+  }
+  .keyboard-container #keyboard .key:active .black-key,
+  .keyboard-container #keyboard .key.active .black-key {
+    top: -5px;
+  }
+  .keyboard-container #keyboard .key .white-key {
+    background: -webkit-linear-gradient(-30deg, #f8f8f8, #ffffff);
+    background: -moz-linear-gradient(-30deg, #f8f8f8, #ffffff);
+    background: -o-linear-gradient(-30deg, #f8f8f8, #ffffff);
+    background: linear-gradient(-30deg, #f8f8f8, #ffffff);
+    box-shadow: inset 0 1px 0px #ffffff, inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px 0px 0px #ffffff, 0 4px 3px rgba(0, 0, 0, 0.7), inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px -1px 15px rgba(0, 0, 0, 0.5), -3px 4px 6px rgba(0, 0, 0, 0.5);
+    display: block;
+    height: 280px;
+  }
+
+  .keyboard-container #keyboard .key #middle-c.white-key {
+    background: -webkit-linear-gradient(-30deg, #F4C4C4, #ffffff);
+    background: -moz-linear-gradient(-30deg, #F4C4C4, #ffffff);
+    background: -o-linear-gradient(-30deg, #F4C4C4, #ffffff);
+    background: linear-gradient(-30deg, #F4C4C4, #ffffff);
+    box-shadow: inset 0 1px 0px #ffffff, inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px 0px 0px #ffffff, 0 4px 3px rgba(0, 0, 0, 0.7), inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px -1px 15px rgba(0, 0, 0, 0.5), -3px 4px 6px rgba(0, 0, 0, 0.5);
+    display: block;
+    height: 280px;
+  }
+  .keyboard-container #keyboard .key #middle-c.white-key::after {
+    content: 'C4';
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+
+    color: #543535;
+  }
+
+  .keyboard-container #keyboard .key .white-key:active,
+  .keyboard-container #keyboard .key .white-key.active {
+    box-shadow: inset 0 1px 0px #ffffff, inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px 0px 0px #ffffff, 0 4px 3px rgba(0, 0, 0, 0.7), inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px -1px 15px #000000, -3px 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -5px;
+    height: 275px;
+  }
+  .keyboard-container #keyboard .key .black-key {
+    content: "";
+    box-shadow: inset 0px -1px 2px rgba(255, 255, 255, 0.4), 0 2px 3px rgba(0, 0, 0, 0.4);
+    background: -webkit-linear-gradient(-20deg, #222222, #000000, #222222);
+    background: -moz-linear-gradient(-20deg, #222222, #000000, #222222);
+    background: -o-linear-gradient(-20deg, #222222, #000000, #222222);
+    background: linear-gradient(-20deg, #222222, #000000, #222222);
+    border-width: 1px 3px 8px;
+    border-style: solid;
+    border-color: #666 #222 #111 #555;
+    height: 160px;
+    position: absolute;
+    top: 0px;
+    right: -40%;
+    width: 70%;
+    z-index: 10;
+  }
+  .keyboard-container #keyboard .key .black-key:active,
+  .keyboard-container #keyboard .key .black-key.active {
+    border-bottom-width: 3px;
+    top: 0;
+  }
+  @media (max-width: 767px) {
+    .keyboard-container #keyboard .key {
+      width: 8%;
+    }
+    .keyboard-container #keyboard .key:nth-child(1),
+    .keyboard-container #keyboard .key:nth-child(2),
+    .keyboard-container #keyboard .key:nth-child(3) {
+      display: none;
+    }
+  }
+  @media (max-width: 480px) {
+    .keyboard-container #keyboard .key {
+      width: 12%;
+    }
+    .keyboard-container #keyboard .key:nth-child(11),
+    .keyboard-container #keyboard .key:nth-child(12),
+    .keyboard-container #keyboard .key:nth-child(13),
+    .keyboard-container #keyboard .key:nth-child(14) {
+      display: none;
+    }
+  }

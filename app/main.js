@@ -6,7 +6,6 @@ const url = require('url')
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
-
 function createMainWindow () {
 
     var shouldQuit = makeSingleInstance()
@@ -17,6 +16,8 @@ function createMainWindow () {
         {
             width: 1266, 
             height: 708,
+            minWidth: 1000,
+            minHeight: 660,
 
             webPreferences: {
                 experimentalFeatures: true
