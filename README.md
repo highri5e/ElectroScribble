@@ -12,6 +12,24 @@
 **UI**:
 * [Kickstart](http://getkickstart.com)
 
+
+## Running the app:
+
+Assuming you have **node, npm** installed...
+
+Clone or download the project
+In the git bash:
+
+Install all the dependencies with:
+`npm install`
+
+to start the app:
+`npm start`
+
+Enjoy! :)
+
+
+**Progress so far**:
 **Very very basic UI** has been done. It allows for: 
 * playing the notes on the keyboard
 * changing the instruments, 
@@ -23,8 +41,9 @@
 
 **TODO**:
 * Add more Scribbletune functions (selecting chords, extending pattern length, sizzle etc.)
+* creating 'Piano Roll' to controll the notes, chords, pattern, volums etc.
 * UI improvements
-* code cleanup
+* Rewrite in TypeScript & code cleanup
 
 
 
