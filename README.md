@@ -11,6 +11,7 @@
 
 **UI**:
 * [Kickstart](http://getkickstart.com)
+* Keyboard CSS [Luiz Felipe Tartarotti Fialho](http://www.felipefialho.com/)
 
 
 ## Running the app:
