@@ -4,12 +4,12 @@ const url = require('url')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
-let mainWindow
+let mainWindow;
 
 function createMainWindow () {
 
-    var shouldQuit = makeSingleInstance()
-    if (shouldQuit) return app.quit()
+    // var shouldQuit = makeSingleInstance()
+    // if (shouldQuit) return app.quit()
 
     // Create the browser window.
     mainWindow = new BrowserWindow(
@@ -18,10 +18,6 @@ function createMainWindow () {
             height: 708,
             minWidth: 1000,
             minHeight: 660,
-
-            webPreferences: {
-                experimentalFeatures: true
-            }
         }
     )
 

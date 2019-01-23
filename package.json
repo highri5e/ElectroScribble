@@ -18,11 +18,12 @@
   },
   "homepage": "https://github.com/highri5e/ElectroScribble#readme",
   "dependencies": {
-    "load-json-file": "^3.0.0",
-    "scribbletune": "^0.10.1",
-    "soundfont-player": "^0.10.6"
+    "load-json-file": "^5.1.0",
+    "scribbletune": "^1.9.2",
+    "soundfont-player": "^0.11.0",
+    "tone": "^13.4.9"
   },
   "devDependencies": {
-    "electron": "^1.7.5"
+    "electron": "^4.0.1"
   }
 }

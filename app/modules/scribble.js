@@ -1,10 +1,11 @@
 const _scribble = require('scribbletune')
 
-var Scribble = (function(){
+let Scribble = (function(){
+
+    const _midiOutPath = './midiout/clip.mid';
 
     // define the main object
     var scribble = {};
-
 
     function _getChords() {
 
@@ -27,7 +28,7 @@ var Scribble = (function(){
         console.log(input)
 
         let clip = _scribble.clip(input);
-        _scribble.midi(clip, './midiout/clip.mid');
+        _scribble.midi(clip, _midiOutPath);
     }
 
     
@@ -35,9 +36,11 @@ var Scribble = (function(){
     scribble.createMidi = _createMidi;
     scribble.getChords = _getChords;
     scribble.getScales = _getScales;
+    scribble.midiOutPath = _midiOutPath;
 
     // export the module
     module.exports = scribble;
+
 })()
 
 
